@@ -6,7 +6,7 @@
 
 
     <!--使用extract-text-webpack-plugin 插件单独生成的css文件-->
-    <link rel="stylesheet" href="dist/main.css">
+    <link rel="stylesheet" href="<%= HtmlWebpackPlugin.files.css[0] %>" >
 
 
 </head>
@@ -14,7 +14,7 @@
 <div id="app">
 
 </div>
-<script src="/dist/main.js"></script>
+<script src="<%= HtmlWebpackPlugin.files.js[0] %>"></script>
 
 </body>
 </html>
